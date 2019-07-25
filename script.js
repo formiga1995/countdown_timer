@@ -19,10 +19,10 @@
            if(parseInt(el_mns.value) >0 || parseInt(el_scs.value)>0 || endct ==1){
              ctpause *=-1;
              if(ctpause ==1){ //Start and set next click as Pause
-               el_btnct.value ='PAUSE';
+               el_btnct.value ='PAUSAR';
                window[obnm].countdownTimer();
              }
-             else el_btnct.value ='RESUME';
+             else el_btnct.value ='CONTINUAR';
            }
          }
        
@@ -57,7 +57,7 @@
              startchr =0;
              ctpause =-1;
              endct =0;
-             el_btnct.value ='START';
+             el_btnct.value ='COMECAR';
              endCT();
            }
            else if(startchr ==1 && ctpause ==1){
