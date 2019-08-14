@@ -1,15 +1,33 @@
 <!DOCTYPE html>
     <head>
-
+        <link rel="stylesheet" href="app.css">
     </head>
     <body>
+        <div class="timer">
         <form action="#" method="post">
             Minutos: <input type="text" id="mns" name="mns" value="0" size="3" maxlength="3" /> &nbsp; &nbsp; Segundos: <input type="text" id="scs" name="scs" value="0" size="2" maxlength="2" /><br/>
-            <input type="button" id="btnct" value="COMECAR" /> 
-            <input type="button" id="btnct_res" value="RECOMECAR" /> 
-            <input type="button" id="btnct_end" value="FIM" />
+            <input type="button" id="btnct" class="btn_input" value="COMECAR" > 
+            <input type="button" id="btnct_res" class="btn_input" value="RECOMECAR"> 
+            <input type="button" id="btnct_end" class="btn_input" value="FIM" >
             </form>
-            CONTADOR: &nbsp; <span id="showmns">00</span>:<span id="showscs">00</span>
+            <h2> Tempo</h2> &nbsp; <h1><span id="showmns">00</span>:<span id="showscs">00</span></h1>
+        </div>
+    <div class="times">
+        <div class="ponto1">
+            PONTOS:
+            <h2><span id="pontos01">0</span></h2>
+            <button id="time1" class="btn_input" value="1" onclick="pontuacao(this.value,this.id)">+1</button>
+            <button id="time1" class="btn_input" value="-1" onclick="pontuacao(this.value,this.id)">-1</button>
+            <button id="time1" class="btn_input" value="0" onclick="pontuacao(this.value,this.id)">RESETAR</button>
+        </div>
+        <div class="ponto2">
+            PONTOS:
+            <h2><span id="pontos02">0</span></h2>
+            <button id="time2" class="btn_input" value="1" onclick="pontuacao(this.value,this.id)">+1</button>
+            <button id="time2" class="btn_input" value="-1" onclick="pontuacao(this.value,this.id)">-1</button>
+            <button id="time2" class="btn_input" value="0" onclick="pontuacao(this.value,this.id)">RESETAR</button>  
+        </div>
+    </div>
         <script src = "script.js"></script>
     </body>
     <footer>

@@ -1,3 +1,9 @@
+    function pontuacao(valor,id){
+      if(!parseint(valor) == 0){
+        alert("RESET DE PONTOS");
+      }
+    }
+    
     function CountdownTimer(obnm){
          var endct =0;  // it is set to 1 when script starts
          var ctmnts =0;  // minutes
@@ -29,7 +35,7 @@
          // HERE YOU CAN ADD TO EXECUTE JavaScript instructions WHEN COUNTDOWN TIMER REACHES TO 0
          function endCT(){
            // HERE ADD YOUR CODE
-       
+          alert("O TEMPO ACABOU!!!");
            return false;
          }
        
