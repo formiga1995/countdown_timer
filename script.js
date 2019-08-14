@@ -1,7 +1,20 @@
     function pontuacao(valor,id){
-      if(!parseint(valor) == 0){
-        alert("RESET DE PONTOS");
+      /*alert("valor: "+ parseInt(valor));*/
+      var pontos1 = parseInt(document.getElementById("pontos01").innerHTML);
+      var pontos2 = parseInt(document.getElementById("pontos02").innerHTML);
+      if(parseInt(valor) == 0){
+        /*alert("reset");*/
+        pontos1 = 0;
+        pontos2 = 0;
+      }else{
+        if(id=="time1"){
+          pontos1 = pontos1 + parseInt(valor);
+        }else{
+          pontos2 = pontos2 + parseInt(valor);
+        }
       }
+      document.getElementById("pontos01").innerHTML = pontos1;
+      document.getElementById("pontos02").innerHTML = pontos2;
     }
     
     function CountdownTimer(obnm){
