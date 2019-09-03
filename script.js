@@ -16,6 +16,28 @@
       document.getElementById("pontos01").innerHTML = pontos1;
       document.getElementById("pontos02").innerHTML = pontos2;
     }
+    //função para calcular as faltas, recebe o valor do botão (+1 -1 ou 0 para reset) e o time (facção)
+    function pontuacaoFaltas(valor,id){
+      /*alert("valor: "+ parseInt(valor));*/
+      var faltas1 = parseInt(document.getElementById("faltas01").innerHTML);
+      var faltas2 = parseInt(document.getElementById("faltas02").innerHTML);
+      if(parseInt(valor) == 0 && id=="time1"){
+        /*alert("reset");*/
+        faltas1 = 0;
+      }else{
+        if(parseInt(valor) == 0 && id=="time2"){
+          faltas2 = 0;
+        }else{
+        if(id=="time1"){
+          faltas1 = faltas1 + parseInt(valor);
+        }else{
+          faltas2 = faltas2 + parseInt(valor);
+        }
+      }
+      }
+      document.getElementById("faltas01").innerHTML = faltas1;
+      document.getElementById("faltas02").innerHTML = faltas2;
+    }
     
     function CountdownTimer(obnm){
          var endct =0;  // eh seteado para 1 qndo comeca o script

@@ -53,3 +53,11 @@ img{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     box-shadow: 0px 0px 5px 0px black;
 }
+.div_pontos{
+    display: inline-block;
+    padding: 5px;
+}
+.div_faltas{
+    display: inline-block;
+    padding: 5px
+}
